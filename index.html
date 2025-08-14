@@ -1,295 +1,334 @@
 <!DOCTYPE html>
+
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Arema Tailor — Jasa Jahit & Permak</title>
-  <meta name="description" content="Arema Tailor: jasa jahit, permak, dan pembuatan seragam. Cepat, rapi, dan terjangkau." />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Arema Tailor — Jasa Jahit &amp; Permak</title>
+<meta content="Arema Tailor: jasa jahit, permak, dan pembuatan seragam. Cepat, rapi, dan terjangkau." name="description"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/></head>
 <body>
+<!-- ===== SVG ICONS ===== -->
+<!-- ===== HEADER ===== -->
+<header class="h-nav" id="siteHeader">
+<div class="h-container">
+<a aria-label="Arema Tailor" class="h-logo" href="#"><span>Arema Tailor</span></a>
+<nav aria-label="Navigasi utama" class="h-desktop">
+<ul class="h-menu">
+<li><a href="#layanan">Layanan</a></li>
+<li><a href="#portofolio">Portofolio</a></li>
+<li><a href="#harga">Harga</a></li>
+<li><a href="#testimoni">Testimoni</a></li>
+<li><a href="#pertanyaan-umum">FAQ</a></li>
+<li><a href="#kontak">Kontak</a></li>
+</ul>
+</nav>
+<div class="h-cta-wrap">
+<a class="h-cta" href="#kontak">Pesan</a>
+<button aria-controls="hMobileMenu" aria-expanded="false" aria-label="Buka menu" class="h-burger" id="hBurger">
+<span class="h-burger-bar"></span><span class="h-burger-bar"></span><span class="h-burger-bar"></span>
+</button>
+</div>
+</div>
+<!-- Panel Mobile -->
+<div aria-hidden="true" class="h-mobile" id="hMobileMenu">
+<div class="h-mobile-inner">
+<nav aria-label="Menu seluler">
+<a class="h-mobile-link" href="#layanan">Layanan</a>
+<a class="h-mobile-link" href="#portofolio">Portofolio</a>
+<a class="h-mobile-link" href="#harga">Harga</a>
+<a class="h-mobile-link" href="#testimoni">Testimoni</a>
+<a class="h-mobile-link" href="#pertanyaan-umum">FAQ</a>
+<a class="h-mobile-link" href="#kontak">Kontak</a>
+</nav>
+<a class="h-cta h-cta-block" href="#kontak">Pesan Sekarang</a>
+</div>
+</div>
+</header>
+<!-- ===== HERO ===== -->
+<section class="hero">
+<div class="container hero-inner">
+<div>
+<div class="eyebrow">Tukang Jahit Profesional</div>
+<h1>Jahit rapi, pas di badan,<br/>selesai tepat waktu.</h1>
+<p class="lead">Dari permak celana sampai setelan jas &amp; kebaya. Kami fokus detail, fitting, dan finishing berkualitas butik.</p>
+<div class="hero-cta">
+<a class="btn primary" href="#kontak"><i class="bi bi-telephone-fill" style="font-size:16px"></i>Konsultasi Gratis</a>
+<a class="btn" href="#portofolio"><i class="bi bi-shirt" style="font-size:16px"></i>Lihat Hasil</a>
+</div>
+<div class="badges">
+<span class="badge"><i class="bi bi-check-lg" style="font-size:14px"></i>Garansi Penyesuaian</span>
+<span class="badge"><i class="bi bi-scissors" style="font-size:14px"></i>12+ Tahun Pengalaman</span>
+<span class="badge"><i class="bi bi-pin-angle" style="font-size:14px"></i>Antar–Jemput Area Kota*</span>
+</div>
+<div class="stats">
+<div class="stat"><b>2.3k+</b><br/><span class="note">Pelanggan puas</span></div>
+<div class="stat"><b>48 jam</b><br/><span class="note">Lead time express</span></div>
+<div class="stat"><b>95%</b><br/><span class="note">Repeat order</span></div>
+</div>
+</div>
+<div class="hero-photo">
+<img alt="Foto hero jahit" data-eager="" decoding="async" fetchpriority="high" src="images/main.png"/>
+<div class="tag"><i class="bi bi-star-fill" style="font-size:14px"></i>Detail adalah segalanya</div>
+<div class="watermark">JAHIT</div>
+</div>
+</div>
+</section>
+<!-- ===== LAYANAN ===== -->
+<section id="layanan">
+<div class="container">
+<div class="section-head">
+<div><h2>Layanan Kami</h2><p>Solusi lengkap — dari permak sederhana hingga custom tailor.</p></div>
+<a class="btn" href="#kontak">Minta Penawaran</a>
+</div>
+<div class="grid cols-3">
+<!-- ... (tetap sama seperti sebelumnya) ... -->
+<div class="card pad">
+<div class="service">
 
-  <!-- ===== SVG ICONS ===== -->
-  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
-    <symbol id="scissors" viewBox="0 0 24 24"><path fill="currentColor" d="M9.64 7.64a3 3 0 1 1-4.24-4.24a3 3 0 0 1 4.24 4.24m8.6 1.31a1 1 0 0 0-1.41 0l-3.1 3.1l-1.42-1.42l6.37-6.36a1 1 0 0 0-1.41-1.42L11 9.2L9.59 7.79l-.7.7a4.97 4.97 0 1 0 1.41 1.41l.7-.7L13 11.2l-6.37 6.36a1 1 0 1 0 1.41 1.42L14.41 12l3.1 3.1a1 1 0 1 0 1.41-1.41L15.83 11z"/></symbol>
-    <symbol id="needle" viewBox="0 0 24 24"><path fill="currentColor" d="M14.1 9.34L6.41 17.03l.71.71l7.69-7.69a1.5 1.5 0 1 0-2.12-2.12L5 15.62l.71.71l7.76-7.76a.5.5 0 1 1 .71.71z"/></symbol>
-    <symbol id="shirt" viewBox="0 0 24 24"><path fill="currentColor" d="M16 3l4 2l-2 4v10a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9L4 5l4-2l2 3h4l2-3z"/></symbol>
-    <symbol id="check" viewBox="0 0 24 24"><path fill="currentColor" d="M9 16.17L4.83 12L3.41 13.41L9 19l12-12l-1.41-1.41z"/></symbol>
-    <symbol id="pin" viewBox="0 0 24 24"><path fill="currentColor" d="M14 6V4h-4v2H7v6l5 5l5-5V6z"/></symbol>
-    <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2L9.19 8.62L2 9.24l5.46 4.73L5.82 21z"/></symbol>
-    <symbol id="phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.03-.24c1.12.37 2.33.57 3.56.57a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.23.2 2.44.57 3.56a1 1 0 0 1-.24 1.03z"/></symbol>
-    <symbol id="mail" viewBox="0 0 24 24"><path fill="currentColor" d="M20 8l-8 5l-8-5V6l8 5l8-5"/></symbol>
-    <symbol id="whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M20.52 3.48A11.94 11.94 0 0 0 12.02 0C5.41 0 .07 5.34.07 11.95c0 2.1.55 4.16 1.6 5.98L0 24l6.23-1.63a11.88 11.88 0 0 0 5.8 1.5h.01c6.61 0 11.95-5.34 11.95-11.95A11.9 11.9 0 0 0 20.52 3.48Zm-8.5 18.3h-.01a9.94 9.94 0 0 1-5.06-1.39l-.36-.21l-3.7.97l.99-3.61l-.23-.37a9.94 9.94 0 1 1 8.38 4.61ZM17.6 14.1c-.27-.14-1.62-.8-1.87-.89c-.25-.09-.43-.14-.61.14c-.18.27-.7.88-.86 1.06c-.16.18-.32.2-.59.07c-.27-.14-1.15-.42-2.2-1.34c-.81-.72-1.36-1.61-1.52-1.88c-.16-.27-.02-.42.12-.56c.12-.12.27-.32.41-.48c.14-.16.18-.27.27-.45c.09-.18.05-.34-.02-.48c-.07-.14-.61-1.47-.84-2.01c-.22-.52-.45-.45-.61-.46l-.52-.01c-.18 0-.48.07-.73.34c-.25.27-.95.93-.95 2.26c0 1.33.97 2.62 1.11 2.8c.14.18 1.9 2.9 4.62 4.07c.65.28 1.16.45 1.56.57c.65.21 1.24.18 1.7.11c.52-.08 1.62-.66 1.85-1.3c.23-.64.23-1.19.16-1.3c-.07-.11-.25-.18-.52-.32Z"/></symbol>
+<div><div class="title"><i class="bi bi-scissors"></i>Permak &amp; Alterasi</div><div class="muted">Potong panjang, kecilkan pinggang, pasang resleting, dan lainnya.</div></div>
+</div>
+</div>
+<div class="card pad">
+<div class="service">
 
-    <!-- New social icons -->
-    <symbol id="instagram" viewBox="0 0 24 24">
-      <path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.3 2.4.5.6.2 1 .5 1.5 1 .5.5.8.9 1 1.5.2.5.4 1.2.5 2.4.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.9-.5 2.4-.2.6-.5 1-1 1.5-.5.5-.9.8-1.5 1-.5.2-1.2.4-2.4.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.3-2.4-.5-.6-.2-1-.5-1.5-1-.5-.5-.8-.9-1-1.5-.2-.5-.4-1.2-.5-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.9.5-2.4.2-.6.5-1 1-1.5.5-.5.9-.8 1.5-1 .5-.2 1.2-.4 2.4-.5C8.4 2.2 8.8 2.2 12 2.2Z"/>
-      <path fill="currentColor" d="M12 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4Zm0 10.2a4 4 0 1 1 0-8.1 4 4 0 0 1 0 8.1Zm6.4-11.6a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8Z"/>
-    </symbol>
-    <symbol id="twitter" viewBox="0 0 24 24">
-      <path fill="currentColor" d="M22.46 6.11c.01.17.01.35.01.52 0 5.33-4.06 11.47-11.47 11.47-2.28 0-4.4-.67-6.18-1.82.32.04.64.06.97.06 1.9 0 3.65-.65 5.03-1.74a4.04 4.04 0 0 1-3.77-2.8c.25.04.51.07.78.07.38 0 .75-.05 1.1-.14a4.03 4.03 0 0 1-3.24-3.95v-.05c.54.3 1.16.48 1.82.5a4.02 4.02 0 0 1-1.79-3.35c0-.74.2-1.44.54-2.04a11.46 11.46 0 0 0 8.31 4.21c-.07-.3-.11-.62-.11-.94a4.03 4.03 0 0 1 6.97-2.75 8.06 8.06 0 0 0 2.56-.98 4.04 4.04 0 0 1-1.77 2.23 8.1 8.1 0 0 0 2.32-.63 8.36 8.36 0 0 1-2.02 2.09Z"/>
-    </symbol>
-  </svg>
+<div><div class="title"><i class="bi bi-shirt"></i>Pembuatan Seragam</div><div class="muted">Seragam kantor, sekolah, komunitas dengan bahan pilihan.</div></div>
+</div>
+</div>
+<div class="card pad">
+<div class="service">
 
-  <!-- ===== HEADER ===== -->
-  <header class="h-nav" id="siteHeader">
-    <div class="h-container">
-      <a class="h-logo" href="#" aria-label="Arema Tailor"><span>Arema Tailor</span></a>
+<div><div class="title"><i class="bi bi-needle"></i>Custom Tailor</div><div class="muted">Jas, kebaya, dress, atau batik—ukur pas sesuai bentuk tubuh.</div></div>
+</div>
+</div>
+<div class="card pad">
+<div class="service">
 
-      <nav class="h-desktop" aria-label="Navigasi utama">
-        <ul class="h-menu">
-          <li><a href="#layanan">Layanan</a></li>
-          <li><a href="#portofolio">Portofolio</a></li>
-          <li><a href="#harga">Harga</a></li>
-          <li><a href="#testimoni">Testimoni</a></li>
-          <li><a href="#pertanyaan-umum">FAQ</a></li>
-          <li><a href="#kontak">Kontak</a></li>
-        </ul>
-      </nav>
+<div><div class="title"><i class="bi bi-pin-angle"></i>Antar–Jemput</div><div class="muted">Khusus area tertentu. Hubungi kami untuk jadwal kurir.</div></div>
+</div>
+</div>
+<div class="card pad">
+<div class="service">
 
-      <div class="h-cta-wrap">
-        <a class="h-cta" href="#kontak">Pesan</a>
-        <button class="h-burger" id="hBurger" aria-label="Buka menu" aria-controls="hMobileMenu" aria-expanded="false">
-          <span class="h-burger-bar"></span><span class="h-burger-bar"></span><span class="h-burger-bar"></span>
-        </button>
-      </div>
-    </div>
+<div><div class="title"><i class="bi bi-check-lg"></i>Konsultasi Fitting</div><div class="muted">Saran potongan &amp; bahan agar nyaman dipakai sepanjang hari.</div></div>
+</div>
+</div>
+<div class="card pad">
+<div class="service">
 
-    <!-- Panel Mobile -->
-    <div class="h-mobile" id="hMobileMenu" aria-hidden="true">
-      <div class="h-mobile-inner">
-        <nav aria-label="Menu seluler">
-          <a href="#layanan" class="h-mobile-link">Layanan</a>
-          <a href="#portofolio" class="h-mobile-link">Portofolio</a>
-          <a href="#harga" class="h-mobile-link">Harga</a>
-          <a href="#testimoni" class="h-mobile-link">Testimoni</a>
-          <a href="#pertanyaan-umum" class="h-mobile-link">FAQ</a>
-          <a href="#kontak" class="h-mobile-link">Kontak</a>
-        </nav>
-        <a class="h-cta h-cta-block" href="#kontak">Pesan Sekarang</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- ===== HERO ===== -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <div>
-        <div class="eyebrow">Tukang Jahit Profesional</div>
-        <h1>Jahit rapi, pas di badan,<br/> selesai tepat waktu.</h1>
-        <p class="lead">Dari permak celana sampai setelan jas & kebaya. Kami fokus detail, fitting, dan finishing berkualitas butik.</p>
-        <div class="hero-cta">
-          <a class="btn primary" href="#kontak"><svg width="16" height="16"><use href="#phone"/></svg> Konsultasi Gratis</a>
-          <a class="btn" href="#portofolio"><svg width="16" height="16"><use href="#shirt"/></svg> Lihat Hasil</a>
-        </div>
-        <div class="badges">
-          <span class="badge"><svg width="14" height="14"><use href="#check"/></svg> Garansi Penyesuaian</span>
-          <span class="badge"><svg width="14" height="14"><use href="#scissors"/></svg> 12+ Tahun Pengalaman</span>
-          <span class="badge"><svg width="14" height="14"><use href="#pin"/></svg> Antar–Jemput Area Kota*</span>
-        </div>
-        <div class="stats">
-          <div class="stat"><b>2.3k+</b><br><span class="note">Pelanggan puas</span></div>
-          <div class="stat"><b>48 jam</b><br><span class="note">Lead time express</span></div>
-          <div class="stat"><b>95%</b><br><span class="note">Repeat order</span></div>
-        </div>
-      </div>
-      <div class="hero-photo">
-        <img alt="Foto hero jahit" src="images/main.png" loading="eager">
-        <div class="tag"><svg width="14" height="14"><use href="#star"/></svg> Detail adalah segalanya</div>
-        <div class="watermark">JAHIT</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== LAYANAN ===== -->
-  <section id="layanan">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <h2>Layanan Kami</h2>
-          <p>Solusi lengkap — dari permak sederhana hingga custom tailor.</p>
-        </div>
-        <a class="btn" href="#kontak">Minta Penawaran</a>
-      </div>
-      <div class="grid cols-3">
-        <div class="card pad"><div class="service"><div class="iconbox"><svg><use href="#scissors"/></svg></div><div><div class="title">Permak & Alterasi</div><div class="muted">Potong panjang, kecilkan pinggang, pasang resleting, dan lainnya.</div></div></div></div>
-        <div class="card pad"><div class="service"><div class="iconbox"><svg><use href="#shirt"/></svg></div><div><div class="title">Pembuatan Seragam</div><div class="muted">Seragam kantor, sekolah, komunitas dengan bahan pilihan.</div></div></div></div>
-        <div class="card pad"><div class="service"><div class="iconbox"><svg><use href="#needle"/></svg></div><div><div class="title">Custom Tailor</div><div class="muted">Jas, kebaya, dress, atau batik—ukur pas sesuai bentuk tubuh.</div></div></div></div>
-        <div class="card pad"><div class="service"><div class="iconbox"><svg><use href="#pin"/></svg></div><div><div class="title">Antar–Jemput</div><div class="muted">Khusus area tertentu. Hubungi kami untuk jadwal kurir.</div></div></div></div>
-        <div class="card pad"><div class="service"><div class="iconbox"><svg><use href="#check"/></svg></div><div><div class="title">Konsultasi Fitting</div><div class="muted">Saran potongan & bahan agar nyaman dipakai sepanjang hari.</div></div></div></div>
-        <div class="card pad"><div class="service"><div class="iconbox"><svg><use href="#star"/></svg></div><div><div class="title">Premium Finishing</div><div class="muted">Jahitan rapat, obras rapi, pressing akhir profesional.</div></div></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== PORTOFOLIO ===== -->
-  <section id="portofolio">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <h2>Portofolio Pilihan</h2>
-          <p>Beberapa hasil terbaru dari bengkel kami.</p>
-        </div>
-        <div class="note">*Gambar bersifat ilustrasi</div>
-      </div>
-      <div class="gallery" aria-label="Galeri">
-        <div class="item t1"><img alt="Jas pria custom" src="images/1.jpg"></div>
-        <div class="item t2"><img alt="Kebaya modern" src="images/2.jpg"></div>
-        <div class="item t3"><img alt="Proses mengukur" src="images/3.webp"></div>
-        <div class="item t2"><img alt="Seragam tim" src="images/4.webp"></div>
-        <div class="item t3"><img alt="Detail jahitan" src="images/5.jpg"></div>
-        <div class="item t2"><img alt="Dress custom" src="images/6.webp"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== HARGA ===== -->
-  <section id="harga">
-    <div class="container">
-      <div class="section-head">
-        <div><h2>Paket & Harga</h2><p>Transparan, bisa disesuaikan kebutuhan.</p></div>
-        <div><a class="btn" href="#kontak">Butuh yang lain?</a></div>
-      </div>
-      <div class="pricing">
-        <div class="card pad price">
-          <div class="title">Permak Basic</div>
-          <div class="num">Rp40.000–Rp90.000</div>
-          <ul>
-            <li><svg width="14" height="14"><use href="#check"/></svg> Potong/semat panjang</li>
-            <li><svg width="14" height="14"><use href="#check"/></svg> Kecilkan pinggang</li>
-            <li><svg width="14" height="14"><use href="#check"/></svg> Ganti resleting</li>
-          </ul>
-          <a class="btn" href="#kontak">Pesan Paket</a>
-        </div>
-        <div class="card pad price" style="position:relative">
-          <div class="ribbon">Terlaris</div>
-          <div class="title">Custom Tailor</div>
-          <div class="num">Mulai Rp650.000</div>
-          <ul>
-            <li><svg width="14" height="14"><use href="#check"/></svg> Ukur & pola pribadi</li>
-            <li><svg width="14" height="14"><use href="#check"/></svg> 2x fitting</li>
-            <li><svg width="14" height="14"><use href="#check"/></svg> Finishing premium</li>
-          </ul>
-          <a class="btn primary" href="#kontak">Konsultasi</a>
-        </div>
-        <div class="card pad price">
-          <div class="title">Seragam Tim</div>
-          <div class="num">Hubungi kami</div>
-          <ul>
-            <li><svg width="14" height="14"><use href="#check"/></svg> Kuantitas fleksibel</li>
-            <li><svg width="14" height="14"><use href="#check"/></svg> Bordir/print logo</li>
-            <li><svg width="14" height="14"><use href="#check"/></svg> Sampel terlebih dulu</li>
-          </ul>
-          <a class="btn" href="#kontak">Minta Quotation</a>
-        </div>
-      </div>
-      <div class="note" style="margin-top:10px">Harga estimasi—biaya final setelah pemeriksaan barang & bahan.</div>
-    </div>
-  </section>
-
-  <!-- ===== TESTIMONI ===== -->
-  <section id="testimoni">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <h2>Apa Kata Pelanggan</h2>
-          <p>Umpan balik nyata dari pelanggan Arema Tailor.</p>
-        </div>
-        <div class="slider-controls">
-          <button class="navbtn" id="prevBtn" aria-label="Sebelumnya">‹</button>
-          <button class="navbtn" id="nextBtn" aria-label="Berikutnya">›</button>
-        </div>
-      </div>
-
-      <div class="slider" id="reviewSlider" aria-label="Slider testimoni">
-        <div class="slides">
-          <article class="card pad testi"><div class="stars">★★★★★</div><p>“Celana chino saya dipendekin rapi, jahitan nyatu kaya bawaan pabrik.”</p><div class="note">— Rafi, Palmerah</div></article>
-          <article class="card pad testi"><div class="stars">★★★★★</div><p>“Kebaya wisuda pas banget di badan. Terima kasih detail rendanya cantik.”</p><div class="note">— Dina, Depok</div></article>
-          <article class="card pad testi"><div class="stars">★★★★☆</div><p>“Seragam kantor 25 pcs. Ukuran presisi semua, tepat waktu.”</p><div class="note">— Budi, Tebet</div></article>
-          <article class="card pad testi"><div class="stars">★★★★★</div><p>“Jas nikah fit-nya mantap. Konsultasinya sabar dan solutif.”</p><div class="note">— Arman, Grogol</div></article>
-          <article class="card pad testi"><div class="stars">★★★★★</div><p>“Rok kantor dikecilin pinggang. Finishing bersih, nyaman dipakai.”</p><div class="note">— Sari, Bekasi</div></article>
-          <article class="card pad testi"><div class="stars">★★★★☆</div><p>“Ganti resleting jaket tebal, hasilnya kuat dan rapi.”</p><div class="note">— Yoga, Cengkareng</div></article>
-          <article class="card pad testi"><div class="stars">★★★★★</div><p>“Dress pesta custom, pola jatuhnya bagus, kelihatan kurus 😄.”</p><div class="note">— Nadia, Kebon Jeruk</div></article>
-          <article class="card pad testi"><div class="stars">★★★★★</div><p>“Batik kantor dirombak, lengan disesuaikan. Puas!”</p><div class="note">— Rizky, Kembangan</div></article>
-          <article class="card pad testi"><div class="stars">★★★★☆</div><p>“Celana jeans sobek diperbaiki, patch-nya nyaru banget.”</p><div class="note">— Dimas, Slipi</div></article>
-          <article class="card pad testi"><div class="stars">★★★★★</div><p>“Seragam komunitas jahitannya kuat, bordir rapi. Recommended.”</p><div class="note">— Vina, Meruya</div></article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FAQ ===== -->
-  <section id="pertanyaan-umum">
-    <div class="container">
-      <div class="section-head"><h2>Pertanyaan Umum</h2></div>
-
-      <details><summary>Berapa lama proses pengerjaan?</summary><p>Permak sederhana 1–3 hari kerja. Custom 7–21 hari (tergantung desain & antrian).</p></details>
-      <details><summary>Apakah menerima bahan dari pelanggan?</summary><p>Bisa. Kami juga sediakan katalog bahan kalau ingin dibantu rekomendasi.</p></details>
-      <details><summary>Apakah ada layanan antar–jemput?</summary><p>Ada untuk area tertentu. Minimal order & biaya kurir berlaku.</p></details>
-      <details><summary>Bagaimana cara melakukan pemesanan?</summary><p>Anda dapat memesan langsung di toko kami, melalui WhatsApp, atau lewat formulir kontak di website ini.</p></details>
-      <details><summary>Apakah menerima pesanan dalam jumlah besar?</summary><p>Ya, kami menerima pesanan seragam atau produksi massal. Waktu pengerjaan menyesuaikan jumlah dan tingkat kesulitan.</p></details>
-      <details><summary>Apakah ada biaya tambahan untuk desain custom?</summary><p>Desain custom dengan detail khusus mungkin memerlukan biaya tambahan sesuai tingkat kerumitan dan material.</p></details>
-      <details><summary>Bisakah melakukan fitting lebih dari dua kali?</summary><p>Bisa, tetapi fitting tambahan di luar paket awal akan dikenakan biaya sesuai ketentuan.</p></details>
-      <details><summary>Apakah melayani pengiriman ke luar kota?</summary><p>Ya, kami dapat mengirim pesanan ke seluruh Indonesia menggunakan jasa ekspedisi pilihan Anda.</p></details>
-      <details><summary>Bagaimana sistem pembayarannya?</summary><p>Pembayaran dapat dilakukan melalui transfer bank, e-wallet, atau tunai di tempat.</p></details>
-      <details><summary>Apakah ada garansi hasil jahitan?</summary><p>Ya, kami memberikan garansi penyesuaian selama 7 hari setelah barang diterima.</p></details>
-    </div>
-  </section>
-
-  <!-- ===== KONTAK ===== -->
-  <section id="kontak">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <h2>Kontak & Pemesanan</h2>
-          <p>Klik tombol WhatsApp untuk chat langsung.</p>
-        </div>
-      </div>
-
-      <div class="contact-grid">
-        <!-- Left: contact links auto-fit -->
-        <div class="contact-card">
-          <a class="wa-button" href="https://wa.me/6281310096543" target="_blank" rel="noopener">
-            <svg width="22" height="22" aria-hidden="true"><use href="#whatsapp"/></svg>
-            <span>Chat WhatsApp • 0813-1009-6543</span>
-          </a>
-          <a class="wa-button" href="https://instagram.com/arematailor" target="_blank" rel="noopener">
-            <svg width="22" height="22" aria-hidden="true"><use href="#instagram"/></svg>
-            <span>Instagram • @arematailor</span>
-          </a>
-          <a class="wa-button" href="https://twitter.com/arematailor" target="_blank" rel="noopener">
-            <svg width="22" height="22" aria-hidden="true"><use href="#twitter"/></svg>
-            <span>Twitter • @arematailor</span>
-          </a>
-        </div>
-
-        <!-- Right: address -->
-        <div class="card pad address">
-          <div class="title">Alamat Toko</div>
-          <p class="muted">
-            <a href="https://maps.app.goo.gl/Ex53AyU5rwgHyV139" target="_blank" rel="noopener" class="link-underline">
-              Jl. Raya Klp. Dua No.7F, RT.003/RW001/RW.5, Klp. Dua, Kec. Kb. Jeruk,<br>
+<div><div class="title"><i class="bi bi-star-fill"></i>Premium Finishing</div><div class="muted">Jahitan rapat, obras rapi, pressing akhir profesional.</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ===== PORTOFOLIO ===== -->
+<section id="portofolio">
+<div class="container">
+<div class="section-head">
+<div><h2>Portofolio Pilihan</h2><p>Beberapa hasil terbaru dari bengkel kami.</p></div>
+<div class="note">*Gambar bersifat ilustrasi</div>
+</div>
+<!-- === FILTER & SORT === -->
+<div aria-label="Filter dan Urutkan" class="catalog-controls" role="region">
+<!-- Desktop -->
+<form class="filters desktop" id="filtersDesktop">
+<div class="group">
+<label class="lbl">Kategori</label>
+<div class="chips" id="catChips">
+<button class="chip is-active" data-cat="all" type="button">Semua</button>
+<button class="chip" data-cat="jas" type="button">Jas</button>
+<button class="chip" data-cat="kebaya" type="button">Kebaya</button>
+<button class="chip" data-cat="kemeja" type="button">Kemeja</button>
+<button class="chip" data-cat="dress" type="button">Dress</button>
+<button class="chip" data-cat="seragam" type="button">Seragam</button>
+<button class="chip" data-cat="jeans" type="button">Jeans</button>
+</div>
+</div>
+<div class="group sort">
+<label class="lbl">Urutkan</label>
+<select aria-label="Urutkan" id="sortBy">
+<option selected="" value="newest">Terbaru</option>
+<option value="popular">Paling Populer</option>
+</select>
+</div>
+</form>
+<!-- Mobile (KATEGORI DI ATAS URUTAN) -->
+<div class="filters mobile">
+<!-- Baris 1: kategori + panah -->
+<div class="mobile-row">
+<button aria-label="Scroll kiri" class="scroll-arrow left">‹</button>
+<div class="chips scrollable" id="catChipsMobile">
+<button class="chip is-active" data-cat="all" type="button">Semua</button>
+<button class="chip" data-cat="jas" type="button">Jas</button>
+<button class="chip" data-cat="kebaya" type="button">Kebaya</button>
+<button class="chip" data-cat="kemeja" type="button">Kemeja</button>
+<button class="chip" data-cat="seragam" type="button">Seragam</button>
+<button class="chip" data-cat="jeans" type="button">Jeans</button>
+<button class="chip" data-cat="dress" type="button">Dress</button>
+</div>
+<button aria-label="Scroll kanan" class="scroll-arrow right">›</button>
+</div>
+<!-- Baris 2: urutan -->
+<div class="sort-inline">
+<label class="lbl">Urutkan</label>
+<select aria-label="Urutkan" id="sortByMobile">
+<option selected="" value="newest">Terbaru</option>
+<option value="popular">Paling Populer</option>
+</select>
+</div>
+</div>
+</div>
+<!-- === /FILTER & SORT === -->
+<div aria-label="Galeri" class="gallery" id="catalogGrid">
+<!-- 6 item total -->
+<div class="item t1" data-cat="jas" data-date="2025-08-02" data-pop="88"><img alt="Jas pria custom" src="images/1.jpg"/></div>
+<div class="item t2" data-cat="kebaya" data-date="2025-07-25" data-pop="92"><img alt="Kebaya modern" src="images/2.jpg"/></div>
+<div class="item t3" data-cat="kemeja" data-date="2025-08-10" data-pop="76"><img alt="Proses mengukur kemeja" src="images/3.webp"/></div>
+<div class="item t2" data-cat="seragam" data-date="2025-06-30" data-pop="70"><img alt="Seragam tim" src="images/4.webp"/></div>
+<div class="item t3" data-cat="jeans" data-date="2025-08-12" data-pop="64"><img alt="Detail jahitan jeans" src="images/5.jpg"/></div>
+<div class="item t2" data-cat="dress" data-date="2025-07-05" data-pop="81"><img alt="Dress custom" src="images/6.webp"/></div>
+</div>
+</div>
+</section>
+<!-- ===== HARGA ===== -->
+<section id="harga">
+<div class="container">
+<div class="section-head">
+<div><h2>Paket &amp; Harga</h2><p>Transparan, bisa disesuaikan kebutuhan.</p></div>
+<div><a class="btn" href="#kontak">Butuh yang lain?</a></div>
+</div>
+<div class="pricing">
+<div class="card pad price">
+<div class="title">Permak Basic</div>
+<div class="num">Rp40.000–Rp90.000</div>
+<ul>
+<li><i class="bi bi-check-lg" style="font-size:14px"></i>Potong/semat panjang</li>
+<li><i class="bi bi-check-lg" style="font-size:14px"></i>Kecilkan pinggang</li>
+<li><i class="bi bi-check-lg" style="font-size:14px"></i>Ganti resleting</li>
+</ul>
+<a class="btn" href="#kontak">Pesan Paket</a>
+</div>
+<div class="card pad price" style="position:relative">
+<div class="ribbon">Terlaris</div>
+<div class="title">Custom Tailor</div>
+<div class="num">Mulai Rp650.000</div>
+<ul>
+<li><i class="bi bi-check-lg" style="font-size:14px"></i>Ukur &amp; pola pribadi</li>
+<li><i class="bi bi-check-lg" style="font-size:14px"></i>2x fitting</li>
+<li><i class="bi bi-check-lg" style="font-size:14px"></i>Finishing premium</li>
+</ul>
+<a class="btn primary" href="#kontak">Konsultasi</a>
+</div>
+<div class="card pad price">
+<div class="title">Seragam Tim</div>
+<div class="num">Hubungi kami</div>
+<ul>
+<li><i class="bi bi-check-lg" style="font-size:14px"></i>Kuantitas fleksibel</li>
+<li><i class="bi bi-check-lg" style="font-size:14px"></i>Bordir/print logo</li>
+<li><i class="bi bi-check-lg" style="font-size:14px"></i>Sampel terlebih dulu</li>
+</ul>
+<a class="btn" href="#kontak">Minta Quotation</a>
+</div>
+</div>
+<div class="note" style="margin-top:10px">Harga estimasi—biaya final setelah pemeriksaan barang &amp; bahan.</div>
+</div>
+</section>
+<!-- ===== TESTIMONI ===== -->
+<section id="testimoni">
+<div class="container">
+<div class="section-head">
+<div><h2>Apa Kata Pelanggan</h2><p>Umpan balik nyata dari pelanggan Arema Tailor.</p></div>
+<div class="slider-controls">
+<button aria-label="Sebelumnya" class="navbtn" id="prevBtn">‹</button>
+<button aria-label="Berikutnya" class="navbtn" id="nextBtn">›</button>
+</div>
+</div>
+<div aria-label="Slider testimoni" class="slider" id="reviewSlider">
+<div class="slides">
+<!-- (testimoni tetap sama) -->
+<article class="card pad testi"><div class="stars">★★★★★</div><p>“Celana chino saya dipendekin rapi, jahitan nyatu kaya bawaan pabrik.”</p><div class="note">— Rafi, Palmerah</div></article>
+<article class="card pad testi"><div class="stars">★★★★★</div><p>“Kebaya wisuda pas banget di badan. Terima kasih detail rendanya cantik.”</p><div class="note">— Dina, Depok</div></article>
+<article class="card pad testi"><div class="stars">★★★★☆</div><p>“Seragam kantor 25 pcs. Ukuran presisi semua, tepat waktu.”</p><div class="note">— Budi, Tebet</div></article>
+<article class="card pad testi"><div class="stars">★★★★★</div><p>“Jas nikah fit-nya mantap. Konsultasinya sabar dan solutif.”</p><div class="note">— Arman, Grogol</div></article>
+<article class="card pad testi"><div class="stars">★★★★★</div><p>“Rok kantor dikecilin pinggang. Finishing bersih, nyaman dipakai.”</p><div class="note">— Sari, Bekasi</div></article>
+<article class="card pad testi"><div class="stars">★★★★☆</div><p>“Ganti resleting jaket tebal, hasilnya kuat dan rapi.”</p><div class="note">— Yoga, Cengkareng</div></article>
+<article class="card pad testi"><div class="stars">★★★★★</div><p>“Dress pesta custom, pola jatuhnya bagus, kelihatan kurus 😄.”</p><div class="note">— Nadia, Kebon Jeruk</div></article>
+<article class="card pad testi"><div class="stars">★★★★★</div><p>“Batik kantor dirombak, lengan disesuaikan. Puas!”</p><div class="note">— Rizky, Kembangan</div></article>
+<article class="card pad testi"><div class="stars">★★★★☆</div><p>“Celana jeans sobek diperbaiki, patch-nya nyaru banget.”</p><div class="note">— Dimas, Slipi</div></article>
+<article class="card pad testi"><div class="stars">★★★★★</div><p>“Seragam komunitas jahitannya kuat, bordir rapi. Recommended.”</p><div class="note">— Vina, Meruya</div></article>
+</div>
+</div>
+</div>
+</section>
+<!-- ===== FAQ ===== -->
+<section id="pertanyaan-umum">
+<div class="container">
+<div class="section-head"><h2>Pertanyaan Umum</h2></div>
+<!-- (details tetap sama) -->
+<details><summary>Berapa lama proses pengerjaan?</summary><p>Permak sederhana 1–3 hari kerja. Custom 7–21 hari (tergantung desain &amp; antrian).</p></details>
+<details><summary>Apakah menerima bahan dari pelanggan?</summary><p>Bisa. Kami juga sediakan katalog bahan kalau ingin dibantu rekomendasi.</p></details>
+<details><summary>Apakah ada layanan antar–jemput?</summary><p>Ada untuk area tertentu. Minimal order &amp; biaya kurir berlaku.</p></details>
+<details><summary>Bagaimana cara melakukan pemesanan?</summary><p>Anda dapat memesan langsung di toko kami, melalui WhatsApp, atau lewat formulir kontak di website ini.</p></details>
+<details><summary>Apakah menerima pesanan dalam jumlah besar?</summary><p>Ya, kami menerima pesanan seragam atau produksi massal. Waktu pengerjaan menyesuaikan jumlah dan tingkat kesulitan.</p></details>
+<details><summary>Apakah ada garansi hasil jahitan?</summary><p>Ya, kami memberikan garansi penyesuaian selama 7 hari setelah barang diterima.</p></details>
+</div>
+</section>
+<!-- ===== KONTAK ===== -->
+<section id="kontak">
+<div class="container">
+<div class="section-head">
+<div><h2>Kontak &amp; Pemesanan</h2><p>Klik tombol WhatsApp untuk chat langsung.</p></div>
+</div>
+<div class="contact-grid">
+<!-- Left -->
+<div class="contact-card">
+<a class="wa-button" href="https://wa.me/6281310096543" rel="noopener" target="_blank">
+<i class="bi bi-whatsapp" style="font-size:22px"></i>
+<span>Admin 1</span>
+</a>
+<a class="wa-button" href="https://instagram.com/arematailor" rel="noopener" target="_blank">
+<i class="bi bi-instagram" style="font-size:22px"></i>
+<span>Instagram</span>
+</a>
+<a class="wa-button" href="https://twitter.com/arematailor" rel="noopener" target="_blank">
+<i class="bi bi-twitter-x" style="font-size:22px"></i>
+<span>Twitter</span>
+</a>
+</div>
+<!-- Right -->
+<div class="card pad address">
+<div class="title">Alamat Toko</div>
+<p class="muted">
+<a class="link-underline" href="https://maps.app.goo.gl/Ex53AyU5rwgHyV139" rel="noopener" target="_blank">
+              Jl. Raya Klp. Dua No.7F, RT.003/RW001/RW.5, Klp. Dua, Kec. Kb. Jeruk,<br/>
               Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11550
             </a>
-          </p>
-          <div class="note">Klik alamat di atas untuk membuka lokasi di Google Maps.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER (centered CTA) ===== -->
-  <footer class="modern-footer">
-    <div class="footer-content">
-      <h2 class="reveal">Siap Wujudkan Pakaian Impian Anda?</h2>
-      <p class="reveal">Konsultasi gratis, jahitan rapi, dan hasil sesuai ekspektasi. Mari mulai project Anda bersama Arema Tailor.</p>
-      <a href="#kontak" class="btn primary footer-cta reveal">Hubungi Kami Sekarang ▸</a>
-    </div>
-    <div class="footer-bottom reveal">© 2025 Arema Tailor. Semua hak cipta dilindungi.</div>
-  </footer>
-
-  <script src="app.js"></script>
+</p>
+<div class="note">Klik alamat di atas untuk membuka lokasi di Google Maps.</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ===== FOOTER ===== -->
+<footer class="modern-footer">
+<div class="footer-content">
+<h2 class="reveal">Siap Wujudkan Pakaian Impian Anda?</h2>
+<p class="reveal">Konsultasi gratis, jahitan rapi, dan hasil sesuai ekspektasi. Mari mulai project Anda bersama Arema Tailor.</p>
+<a class="btn primary footer-cta reveal" href="#kontak">Hubungi Kami Sekarang ▸</a>
+</div>
+<div class="footer-bottom reveal">© 2025 Arema Tailor.</div>
+</footer>
+<!-- Lightbox / Zoom (dipindah ke dalam body) -->
+<div aria-hidden="true" aria-label="Pratinjau gambar" class="lightbox" id="lightbox" role="dialog">
+<button aria-label="Tutup" class="lb-close" id="lbClose">✕</button>
+<button aria-label="Sebelumnya" class="lb-nav lb-prev" id="lbPrev">‹</button>
+<img alt="" id="lbImg"/>
+<button aria-label="Berikutnya" class="lb-nav lb-next" id="lbNext">›</button>
+</div>
+<script src="app.js"></script>
 </body>
 </html>
